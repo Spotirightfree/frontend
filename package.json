@@ -1,4 +1,6 @@
 {
+  "proxy": "http://localhost:3000",
+  "homepage": ".",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -37,6 +39,5 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.3"
-  },
-  "proxy": "http://localhost:80"
+  }
 }

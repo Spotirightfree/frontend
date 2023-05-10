@@ -33,6 +33,9 @@ async function playlistService() {
   })
   console.log(process.env.REACT_APP_GATEWAY_URL)
 }
+function testAlert(){
+  alert("JS is working");
+}
 
 function App() {
   
@@ -50,6 +53,8 @@ function App() {
         <button onClick={musicService}>Music-service</button>
         <br/>
         <button onClick={playlistService}>Playlist-service</button>
+        <br/>
+        <button onClick={testAlert}>Test button</button>
       </header>
     </div>
   );
