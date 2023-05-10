@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios'
 
 async function loginService() {
-  await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/login-service/HelloWorld`)
+  await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/login-service/HelloWorld`, { crossDomain: true })
   .then(res => {
     alert(res.data)
   })
@@ -13,7 +13,7 @@ async function loginService() {
   console.log(process.env.REACT_APP_GATEWAY_URL)
 }
 async function musicService() {
-  await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/music-service/HelloWorld`)
+  await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/music-service/HelloWorld`, { crossDomain: true })
   .then(res => {
     alert(res.data)
   })
@@ -23,7 +23,7 @@ async function musicService() {
   console.log(process.env.REACT_APP_GATEWAY_URL)
 }
 async function playlistService() {
-  await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/playlist-service/HelloWorld`)
+  await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/playlist-service/HelloWorld`, { crossDomain: true })
   .then(res => {
     alert(res.data)
   })
