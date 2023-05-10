@@ -45,7 +45,9 @@ function App() {
         </p>
         
         <button onClick={loginService}>Login-service</button>
+        <br/>
         <button onClick={musicService}>Music-service</button>
+        <br/>
         <button onClick={playlistService}>Playlist-service</button>
       </header>
     </div>
