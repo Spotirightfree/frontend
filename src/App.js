@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios'
 
 async function loginService() {
+  //ocelot-gateway/login-service/HelloWorld
   await axios.get(`${process.env.REACT_APP_GATEWAY_URL}/login-service/HelloWorld`, { crossDomain: true })
   .then(res => {
     alert(res.data)
